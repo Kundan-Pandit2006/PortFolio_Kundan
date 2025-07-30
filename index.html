@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website using HTML CSS & JavaScript</title>
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- CSS Domaib -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header Design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class='bx  bx-menu-wider' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#coding-platform">Coding Platform</a>
+            <a href="#projects">Projects</a>        
+            <a href="#contact">Contact</a>
+
+        </nav>
+    </header>
+
+    <!-- Home Section Design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Kundan Pandit</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>I'm a front-end developer with a love for building fast, responsive, and accessible websites. I combine
+                solid technical skills with an eye for design to ensure every project is both functional and
+                aesthetically engaging. From landing pages to full-scale web apps, I'm dedicated to delivering code
+                that's easy to maintain and performance-optimized..</p>
+            <div class="social-media">
+                <a href="https://twitter.com/1514Kundan" target="_blank" rel="noopener noreferrer">
+                    <i class='bx bxl-twitter'></i></a>
+                <a href="https://linkedin.com/in/kundanpandit1514" target="_blank" >
+                    <i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Kundan-Pandit2006" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="wbimage.jpeg" alt="Photo">
+        </div>
+    </section>
+
+    <!-- About Section Design -->
+
+    <section class="about" id="about">
+        <div class="home-img">
+            <img src="homepage.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Fronted Developer!</h3>
+            <p>🚀 I'm a passionate Frontend Web Developer with a strong focus on creating clean, responsive, and
+                user-friendly websites. I specialize in HTML, CSS, JavaScript, and modern frameworks like React, turning
+                creative ideas into engaging digital experiences. With a keen eye for design and detail, I love building
+                interfaces that are both visually appealing and performance-optimized. Whether it's crafting sleek
+                landing pages or developing dynamic web apps, I'm always ready to learn, adapt, and push the boundaries
+                of frontend development.</p>
+            <a href="#" class="btn">Read More..</a>
+        </div>
+    </section>
+
+    <!-- Coding Platform Section Design -->
+    <section class="coding-platform" id="coding-platform">
+        <h2 class="heading">Coding <span>Platforms</span></h2>
+
+        <div class="platform-container">
+            <div class="platform-box">
+                <i class='bx bx-code-block'></i>
+                <h3>LeetCode</h3>
+                <p>Check out my LeetCode profile where I solve data structures and algorithm challenges regularly.</p>
+                <a href="https://leetcode.com/Kundan_Pandit" target="_blank" class="btn">Visit Profile</a>
+            </div>
+
+            <div class="platform-box">
+                <i class='bx bx-trophy'></i>
+                <h3>CodeChef</h3>
+                <p>Explore my CodeChef profile for competitive programming problems and contests participation.</p>
+                <a href="https://www.codechef.com/users/kundan_pandit" target="_blank" class="btn">Visit Profile</a>
+            </div>
+
+            <div class="platform-box">
+                <i class='bx bx-terminal'></i>
+                <h3>HackerRank</h3>
+                <p>View my HackerRank profile with completed challenges in problem-solving, JavaScript, and more.</p>
+                <a href="https://www.hackerrank.com/kundanpandit5417" target="_blank" class="btn">Visit Profile</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Project Section -->
+
+    <section class="project" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+
+        <div class="project-container">
+
+            <div class="project-box">
+                <i class='bx bx-cloud-rain'></i>
+                <h3>Weather App</h3>
+                <p>Stay updated with the latest local weather conditions. Click below to view a detailed forecast and
+                    plan your day.</p>
+                <a href="#" target="_blank" class="btn">Visit Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section Design -->
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="https://formspree.io/f/xldldwjo" method="POST">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="text" name="subject" placeholder="Subject" required>
+            </div>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+        <!-- Thank You Message (initially hidden) -->
+        <div id="thank-you-message" class="thank-you-message" style="display: none;">
+            <h3>Thank you! 🙌</h3>
+            <p>Your message has been sent successfully. I'll get back to you soon.</p>
+            <a href="#home" class="btn">Back to Home</a>
+        </div>
+
+    </section>
+
+    <!-- Footer Design -->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by Kundan Pandit | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Tyoed JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
