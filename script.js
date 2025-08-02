@@ -54,7 +54,7 @@ ScrollReveal().reveal('.home-content p, .about-content p', { origin: 'right' });
 
 // Typed.js text effect
 const typed = new Typed('.multiple-text', {
-    strings: ['Frontend Developer', 'Backend Developer', 'Coder'],
+    strings: ['Computer Science Student', 'Full Stack Developer', 'Coder'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -89,4 +89,5 @@ form.addEventListener('submit', function (e) {
         console.error(error);
     });
 });
+
 
